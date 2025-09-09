@@ -206,6 +206,9 @@
   .table {
     display: table;
   }
+  .h-\[0px\] {
+    height: 0px;
+  }
   .h-\[24px\] {
     height: 24px;
   }
@@ -223,6 +226,15 @@
   }
   .h-\[410px\] {
     height: 410px;
+  }
+  .h-\[470px\] {
+    height: 470px;
+  }
+  .h-\[500px\] {
+    height: 500px;
+  }
+  .h-\[600px\] {
+    height: 600px;
   }
   .h-full {
     height: 100%;
@@ -248,11 +260,32 @@
   .w-3\/4 {
     width: calc(3/4 * 100%);
   }
+  .w-3\/6 {
+    width: calc(3/6 * 100%);
+  }
   .w-4 {
     width: calc(var(--spacing) * 4);
   }
   .w-4\/7 {
     width: calc(4/7 * 100%);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-5\/1 {
+    width: calc(5/1 * 100%);
+  }
+  .w-5\/6 {
+    width: calc(5/6 * 100%);
+  }
+  .w-5\/8 {
+    width: calc(5/8 * 100%);
+  }
+  .w-5\/10 {
+    width: calc(5/10 * 100%);
+  }
+  .w-5\/12 {
+    width: calc(5/12 * 100%);
   }
   .w-\[38px\] {
     width: 38px;
@@ -265,6 +298,9 @@
   }
   .w-\[101px\] {
     width: 101px;
+  }
+  .w-\[111px\] {
+    width: 111px;
   }
   .w-\[265px\] {
     width: 265px;
@@ -324,17 +360,14 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-  .gap-12 {
-    gap: calc(var(--spacing) * 12);
-  }
-  .gap-13 {
-    gap: calc(var(--spacing) * 13);
-  }
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
   .gap-\[45px\] {
     gap: 45px;
+  }
+  .overflow-x-hidden {
+    overflow-x: hidden;
   }
   .rounded-\[2px\] {
     border-radius: 2px;
@@ -375,12 +408,6 @@
   }
   .bg-\[url\(\'\.\/images\/man1\.jpg\'\)\] {
     background-image: url('./images/man1.jpg');
-  }
-  .bg-\[url\(\'\.\/images\/man2\.jpg\'\)\] {
-    background-image: url('./images/man2.jpg');
-  }
-  .bg-\[url\(\'\.\/images\/man3\.jpg\'\)\] {
-    background-image: url('./images/man3.jpg');
   }
   .bg-cover {
     background-size: cover;
@@ -470,6 +497,12 @@
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
   }
+}
+.discription {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
 }
 @property --tw-translate-x {
   syntax: "*";
